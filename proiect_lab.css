@@ -1,0 +1,63 @@
+html {
+	font-size:14px;
+	font-family:Verdana, Tahoma, sans-serif;
+}
+
+header{
+    display:flex;
+    background-color: hsla(46, 100%, 81%, 0.884);
+    height: 100px;
+    align-items:center;
+    text-align: center;
+}
+
+header h1{
+    flex:1;
+}
+
+header img{
+    height:100%;
+}
+
+body p{
+	text-align: center;
+}
+
+.container_taburi {
+	background-color: rgb(255, 209, 157);
+	overflow: hidden;
+  }
+  
+.container_taburi a {
+	float: left;
+	color: #000000;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration:solid;
+	font-size: 17px;
+}
+
+.container_taburi a:hover{
+	background:rgb(184, 73, 0);
+    text-shadow:0px 0px 4px rgb(252, 105, 72);
+	}
+
+.container_taburi a.active{
+	background:rgb(238, 126, 41);
+	text-shadow:0px 0px 4px rgb(255, 177, 159);
+	}
+
+#informatii > section{
+    border: 2px solid rgb(128, 0, 0);
+    padding:5px;
+    min-width:150px;
+    }
+#galerie > h3{
+    text-align: center;
+    
+}
+
+
+
+
+
