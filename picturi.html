@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8" />
     <title>Salvador Dalí</title>
-    <link rel="stylesheet" type="text/css" href="C:\Users\Asus\Desktop\TW\proiect\picturi.css" />
+    <link rel="stylesheet" type="text/css" href="/picturi.css" />
     <link rel="icon" type="img"
         href="https://blog.singulart.com/wp-content/uploads/2019/08/the-persistence-of-memory-1931-1140x867.jpg" />
     <script src="picturi.js"></script>
+    <script src="server.js"></script>
 </head>
 
 <body>
@@ -31,7 +32,7 @@
 
     <p>Dacă doriți să primiți pe mail o informare atunci când există expoziții de artă în orașul dumneavoastră,
         </br>completați formularul de mai jos:</p>
-    <form>
+    <form action="/" method="post">
         </br>
         <input type="text" placeholder="Nume" name="nume" required />
         <input type="text" placeholder="Prenume" name="prenume" required /> </br>
@@ -49,7 +50,7 @@
             </br><input type="checkbox" id="o4" />
             <label for="o4">Toate cele de mai sus</label>
         </div></br>
-        <input type="submit" />
+        <input type="submit" value="Afișează datele care vor fi înregistrate" />
     </form>
 
     <div id="Container"></div>
