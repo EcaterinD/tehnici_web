@@ -1,14 +1,20 @@
 html {
     font-size: 14px;
     font-family: Verdana, Tahoma, sans-serif;
+	background-color: antiquewhite;
 }
 
 header {
     display: flex;
-    background-color: hsla(46, 100%, 81%, 0.884);
+    background-color: hsla(32, 100%, 86%, 0.884);
     height: 100px;
     align-items: center;
     text-align: center;
+}
+
+header :hover {
+    background-color: rgba(238, 126, 41, 0.637);
+    transition: all 2s ease-out;
 }
 
 header h1 {
@@ -17,12 +23,6 @@ header h1 {
 
 header img {
     height: 100%;
-}
-
-#intro {
-    text-align: center;
-    background-image: url("https://image.shutterstock.com/image-illustration/beige-cream-abstract-background-smooth-260nw-305411870.jpg");
-    background-size: cover;
 }
 
 .container_taburi {
@@ -86,3 +86,12 @@ header img {
     font-size: 1rem;
     margin: 0.5rem 0;
 }
+
+form{
+    border: 2px dashed rgb(151, 69, 35);
+    background-color: bisque; 
+    width: fit-content;
+}
+input::not([type="checkbox"]) {
+    display: block;
+  }

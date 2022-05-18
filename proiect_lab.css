@@ -1,11 +1,12 @@
 html {
 	font-size:14px;
 	font-family:Verdana, Tahoma, sans-serif;
+	background-color: antiquewhite;
 }
 
 header{
-    display:flex;
-    background-color: hsla(46, 100%, 81%, 0.884);
+    display:flex;    
+	background-color: hsla(32, 100%, 86%, 0.884);
     height: 100px;
     align-items:center;
     text-align: center;
@@ -17,6 +18,11 @@ header h1{
 
 header img{
     height:100%;
+}
+
+header :hover {
+    background-color: rgba(238, 126, 41, 0.637);
+    transition: all 2s ease-out;
 }
 
 #intro{

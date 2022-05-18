@@ -1,11 +1,12 @@
 html {
     font-size: 14px;
     font-family: Verdana, Tahoma, sans-serif;
+	background-color: antiquewhite;
 }
 
 header {
     display: flex;
-    background-color: hsla(46, 100%, 81%, 0.884);
+    background-color: hsla(32, 100%, 86%, 0.884);
     height: 100px;
     align-items: center;
     text-align: center;
@@ -19,10 +20,9 @@ header img {
     height: 100%;
 }
 
-#intro {
-    text-align: center;
-    background-image: url("https://image.shutterstock.com/image-illustration/beige-cream-abstract-background-smooth-260nw-305411870.jpg");
-    background-size: cover;
+header :hover {
+    background-color: rgba(238, 126, 41, 0.637);
+    transition: all 2s ease-out;
 }
 
 .container_taburi {
@@ -58,14 +58,14 @@ header img {
 
 @media (min-width: 800px) {
     .container_lista img{
-        height: 200px;
+        height: 150px;
         float: right;
     }
 }
 
 @media (max-width: 800px) {
     .container_lista img{
-        height: 35vw;
+        height: 25vw;
         float: left;
     }
 }
