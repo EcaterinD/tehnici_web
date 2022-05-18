@@ -1,7 +1,7 @@
 html {
 	font-size:14px;
 	font-family:Verdana, Tahoma, sans-serif;
-	background-color: antiquewhite;
+	background-color: rgb(255, 233, 203);
 }
 
 header{
@@ -43,11 +43,38 @@ header :hover {
 	to { width: 100% }
   }
 
+.container_taburi .submeniu {
+    display:none;
+    position: absolute;
+    background-color: rgb(255, 209, 157);
+    text-align: center;
+    
+}
+.container_taburi li:hover .submeniu {
+    display: block;
+    padding: 0;
+}
+
+.container_taburi .submeniu li{
+    display: block;
+    padding: 0;
+}
+
+.container_taburi > li{
+    padding: 10px;
+	font-size: 17px;
+    display: inline-block;
+}
+
 .container_taburi {
 	background-color: rgb(255, 209, 157);
 	display: flex;
-	gap: 0.5rem;
+	gap: 1rem;
 	overflow: hidden;
+    flex-direction: "row";
+    list-style-type: none;
+    height: 50px;
+    align-items: center;
   }
   
 .container_taburi a {
@@ -70,21 +97,48 @@ header :hover {
 	text-shadow:0px 0px 4px rgb(255, 177, 159);
 	}
 
-#informatii > section{
+#informatii section p{
     border: 2px solid rgb(128, 0, 0);
     padding:5px;
-    min-width:150px;
+    max-width:400px;
+	height: fit-content;
+	text-align: center;
+	border-radius: 15px;
+	font-size: larger;
     }
 
-#galerie > h3{
-    text-align: center;  
+#informatii .gridLayout{
+	width: max-content;
+	height: max-content;
+	display: grid;
+	align-items: center;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: repeat(1fr);
+	padding-left: 60px;
+	padding-top: 15px;
+	gap: 30px;
+	grid-template-areas: 
+	" . a . "
+	" b img c"
+	" . d . "
+
 }
 
-#galerie img {
-	height: 180px;
+#informatii .i.a{
+	grid-area: a;
 }
-
-
-
+#informatii .i.b{
+	grid-area: b;
+}
+#informatii .i.img{
+	max-width: 410px;
+	grid-area: img;
+}
+#informatii .i.c{
+	grid-area: c;
+}
+#informatii .i.d{
+	grid-area: d;
+}
 
 

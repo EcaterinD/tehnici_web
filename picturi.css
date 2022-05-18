@@ -1,7 +1,7 @@
 html {
     font-size: 14px;
-    font-family: Verdana, Tahoma, sans-serif;
-	background-color: antiquewhite;
+    font-family: Verdana, Tahoma, sans-serif;	
+    background-color: rgb(255, 233, 203);
 }
 
 header {
@@ -25,32 +25,59 @@ header img {
     height: 100%;
 }
 
-.container_taburi {
+.container_taburi .submeniu {
+    display:none;
+    position: absolute;
     background-color: rgb(255, 209, 157);
-    display: flex;
-    gap: 0.5rem;
-    overflow: hidden;
-}
-
-.container_taburi a {
-    float: left;
-    color: black;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: solid;
-    font-size: 17px;
-    transition: all 0.5s ease-out;
+    
+}
+.container_taburi li:hover .submeniu {
+    display: block;
+    padding: 0;
 }
 
-.container_taburi a:hover {
-    background: rgba(184, 74, 0, 0.676);
-    text-shadow: 0px 0px 4px rgb(252, 105, 72);
+.container_taburi .submeniu li{
+    display: block;
+    padding: 0;
 }
 
-.container_taburi a.active {
-    background: rgba(238, 126, 41, 0.637);
-    text-shadow: 0px 0px 4px rgb(255, 177, 159);
+.container_taburi > li{
+    padding: 10px;
+	font-size: 17px;
+    display: inline-block;
 }
+
+.container_taburi {
+	background-color: rgb(255, 209, 157);
+	display: flex;
+	gap: 1rem;
+	overflow: hidden;
+    flex-direction: "row";
+    list-style-type: none;
+    height: 50px;
+    align-items: center;
+  }
+  
+.container_taburi a {
+	float: left;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration:solid;
+	font-size: 17px;
+	transition: all 0.5s ease-out;
+}
+
+.container_taburi a:hover{
+	background:rgba(184, 74, 0, 0.676);
+    text-shadow:0px 0px 4px rgb(252, 105, 72);
+	}
+
+.container_taburi a.active{
+	background:rgba(238, 126, 41, 0.637);
+	text-shadow:0px 0px 4px rgb(255, 177, 159);
+	}
 
 .galerie {
     display: flex;
